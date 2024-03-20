@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-command = "python3 -m pip install curl-cffi lxml -U --pre --user"
+command = "py -m pip install curl-cffi lxml -U --pre --user"
 command = f"{command} --break-system-packages" if sys.version_info >= (3, 10) else command  
 subprocess.run(command, shell=True, check=True)
 ###################################################################################
